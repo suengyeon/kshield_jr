@@ -542,8 +542,8 @@ def login():
                     "username":   u,
                     "ip":         ip,
                     "fail_count": ip_count,
-                publish_alert("CREDENTIAL_STUFFING_DETECTED", username=u, ip=ip, extra={"ip_fail_count": ip_count})
                 }, "warning")
+                publish_alert("CREDENTIAL_STUFFING_DETECTED", username=u, ip=ip, extra={"ip_fail_count": ip_count})
             else:
                 db.execute(
                     "UPDATE login_lockout SET fail_count = ? WHERE target_id = ? AND attack_type = 'IP_BRUTE_FORCE'",
