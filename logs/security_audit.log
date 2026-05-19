@@ -684,3 +684,315 @@
 {"timestamp": "2026-05-13T00:55:09", "event": "SESSION_HIJACK_DETECTED", "username": "user2", "original_ip": "211.234.226.98", "current_ip": "182.208.176.30"}
 {"timestamp": "2026-05-13T00:58:49", "event": "SESSION_HIJACK_DETECTED", "username": "admin", "original_ip": "182.208.176.30", "current_ip": "211.234.226.98"}
 {"timestamp": "2026-05-13T00:58:59", "event": "LOGIN_SUCCESS", "username": "admin", "ip": "211.234.226.98"}
+{"timestamp": "2026-05-16T03:27:58", "event": "LOGIN_SUCCESS", "username": "admin", "ip": "10.0.1.139"}
+{"timestamp": "2026-05-16T03:28:24", "event": "LOGOUT", "username": "admin", "ip": "10.0.1.139"}
+{"timestamp": "2026-05-16T03:28:33", "event": "LOGIN_FAILED", "username": "user1", "ip": "10.0.1.139"}
+{"timestamp": "2026-05-16T03:28:39", "event": "LOGIN_FAILED", "username": "user1", "ip": "10.0.1.139"}
+{"timestamp": "2026-05-16T03:28:45", "event": "LOGIN_FAILED", "username": "user1", "ip": "10.0.1.139"}
+{"timestamp": "2026-05-16T03:28:50", "event": "LOGIN_FAILED", "username": "user1", "ip": "10.0.1.139"}
+{"timestamp": "2026-05-16T03:29:02", "event": "LOGIN_SUCCESS", "username": "admin", "ip": "10.0.1.139"}
+{"timestamp": "2026-05-16T03:30:37", "event": "SESSION_HIJACK_DETECTED", "username": "admin", "original_ip": "10.0.1.139", "current_ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T03:30:43", "event": "LOGIN_SUCCESS", "username": "admin", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T03:42:45", "event": "FILE_UPLOAD", "actor": "admin", "target": "비번들 (1).txt", "target_levels": "1,2,3", "size_bytes": 2346, "status": "SUCCESS"}
+{"timestamp": "2026-05-16T03:44:46", "event": "LOGOUT", "username": "admin", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T03:44:52", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T03:45:08", "event": "LOGIN_FAILED", "username": "user2", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T03:45:23", "event": "NEW_USER_REGISTERED", "username": "user3", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T03:45:31", "event": "LOGIN_SUCCESS", "username": "user3", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T03:56:19.297203", "event": "FILE_DOWNLOADED", "username": "user3", "file_name": "비번들 (1).txt"}
+{"timestamp": "2026-05-16T03:56:22.634748", "event": "FILE_DOWNLOADED", "username": "user3", "file_name": "개인정보_파기_확인서.docx"}
+{"timestamp": "2026-05-16T04:01:02.739724", "event": "ABNORMAL_LOCATION_LOGIN", "username": "user1", "ip": "8.8.8.8", "country": "US"}
+{"timestamp": "2026-05-16T04:52:55.678859", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T04:55:28.367142", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T04:55:28.601524", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T04:55:28.873765", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T04:55:29.135362", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T04:55:29.391857", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T04:55:29.681181", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T04:55:30.152826", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T04:55:30.691493", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T04:55:31.251153", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T05:06:21.302745", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T05:06:29.857973", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T05:07:09.928793", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T05:07:10.151975", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T05:07:10.472657", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T05:07:10.804058", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T05:07:11.211964", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T05:07:11.593121", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T05:07:12.070042", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T05:07:12.531381", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T05:13:46.240589", "event": "LOGIN_FAILED", "username": "user2", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T05:21:43.974186", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T05:21:46.115239", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T05:21:48.694707", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T05:21:51.284532", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T05:21:53.887647", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T05:21:56.503363", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T05:21:59.094115", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T05:22:01.706217", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T05:22:04.343958", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T05:22:06.974475", "event": "LOGIN_FAILED", "username": "user1", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-16T10:52:38.723981", "event": "FILE_DOWNLOADED", "username": "user3", "file_name": "비번들 (1).txt"}
+{"timestamp": "2026-05-16T10:52:39.206893", "event": "FILE_DOWNLOADED", "username": "user3", "file_name": "비번들 (1).txt"}
+{"timestamp": "2026-05-16T10:52:41.125260", "event": "FILE_DOWNLOADED", "username": "user3", "file_name": "[공격자칼리].txt"}
+{"timestamp": "2026-05-16T10:52:42.154197", "event": "FILE_DOWNLOADED", "username": "user3", "file_name": "개인정보_파기_확인서.docx"}
+{"timestamp": "2026-05-17T09:05:53", "event": "LOGOUT", "username": "user3", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T09:05:58", "event": "LOGIN_FAILED", "username": "user1", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T09:06:11", "event": "LOGIN_SUCCESS", "username": "user3", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T09:08:50", "event": "LOGOUT", "username": "user3", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T09:09:01", "event": "LOGIN_SUCCESS", "username": "user3", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T09:34:05", "event": "LOGOUT", "username": "user3", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T09:38:02", "event": "LOGIN_SUCCESS", "username": "user3", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T09:49:25", "event": "LOGIN_FAILED", "username": "user3", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T09:49:26", "event": "LOGIN_FAILED", "username": "user3", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T09:49:26", "event": "LOGIN_FAILED", "username": "user3", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T09:49:27", "event": "LOGIN_FAILED", "username": "user3", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T09:49:28", "event": "LOGIN_FAILED", "username": "user3", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T09:49:29", "event": "LOGIN_FAILED", "username": "user3", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T09:49:30", "event": "LOGIN_FAILED", "username": "user3", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T09:49:31", "event": "LOGIN_FAILED", "username": "user3", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T09:49:32", "event": "LOGIN_FAILED", "username": "user3", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T09:49:33", "event": "LOGIN_FAILED", "username": "user3", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T09:49:34", "event": "LOGIN_FAILED", "username": "user3", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T09:53:14", "event": "LOGOUT", "username": "user3", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T09:53:20", "event": "LOGIN_SUCCESS", "username": "user3", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T10:09:30", "event": "LOGOUT", "username": "user3", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T10:09:42", "event": "LOGIN_FAILED", "username": "victim", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T10:09:59", "event": "LOGIN_FAILED", "username": "victim", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T10:10:08", "event": "LOGIN_FAILED", "username": "victim", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T10:12:19", "event": "LOGIN_FAILED", "username": "victim", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T10:12:29", "event": "LOGIN_SUCCESS", "username": "victim", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T10:14:21", "event": "LOGOUT", "username": "victim", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T10:14:32", "event": "LOGIN_SUCCESS", "username": "admin", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T10:15:59", "event": "LOGOUT", "username": "admin", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T10:16:08", "event": "LOGIN_FAILED", "username": "victim", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T10:16:15", "event": "LOGIN_SUCCESS", "username": "victim", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T10:16:56", "event": "FILE_UPLOAD", "actor": "victim", "owner": "victim", "target": "테스트.png", "target_levels": "2", "size_bytes": 249220, "status": "SUCCESS"}
+{"timestamp": "2026-05-17T10:17:03", "event": "FILE_DOWNLOADED", "username": "victim", "file_name": "테스트.png", "file_id": 30, "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T10:17:42", "event": "LOGOUT", "username": "victim", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T10:18:22", "event": "LOGIN_SUCCESS", "username": "attacker", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T10:21:18", "event": "LOGIN_FAILED", "username": "user3", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T10:21:33", "event": "LOGIN_FAILED", "username": "attacker", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T10:22:09", "event": "LOGIN_SUCCESS", "username": "attacker", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T10:26:19", "event": "FILE_DOWNLOADED", "username": "attacker", "file_name": "테스트.png", "file_id": 30, "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T10:30:47", "event": "FILE_DOWNLOADED", "username": "attacker", "file_name": "테스트용 파일입니다.txt", "file_id": 20, "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T10:31:04", "event": "LOGOUT", "username": "attacker", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T10:31:10", "event": "LOGIN_SUCCESS", "username": "victim", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T10:31:50", "event": "LOGOUT", "username": "victim", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T10:32:18", "event": "LOGIN_SUCCESS", "username": "victim", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T10:52:01", "event": "LOGOUT", "username": "victim", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T10:53:26", "event": "LOGIN_FAILED", "username": "attacker", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T10:54:31", "event": "LOGIN_SUCCESS", "username": "attacker", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T14:00:38", "event": "LOGIN_SUCCESS", "username": "victim", "ip": "10.0.1.97"}
+{"timestamp": "2026-05-17T14:05:29.678616", "event": "SESSION_HIJACK_DETECTED", "username": "attacker"}
+{"timestamp": "2026-05-17T14:13:52.923790", "event": "SESSION_HIJACK_DETECTED", "username": "attacker"}
+{"timestamp": "2026-05-17T14:16:36.263205", "event": "LOGIN_FAILED", "username": "victim", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-17T14:16:37.039085", "event": "LOGIN_FAILED", "username": "victim", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-17T14:16:37.779746", "event": "LOGIN_FAILED", "username": "victim", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-17T14:16:38.647682", "event": "LOGIN_FAILED", "username": "victim", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-17T14:16:39.521308", "event": "LOGIN_FAILED", "username": "victim", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-17T14:16:40.343372", "event": "LOGIN_FAILED", "username": "victim", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-17T14:16:41.312710", "event": "LOGIN_FAILED", "username": "victim", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-17T14:16:42.128342", "event": "LOGIN_FAILED", "username": "victim", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-17T14:16:43.251410", "event": "LOGIN_FAILED", "username": "victim", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-17T14:16:44.628525", "event": "LOGIN_FAILED", "username": "victim", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-17T14:18:13.652859", "event": "LOGIN_FAILED", "username": "victim", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-17T15:53:55.380360", "event": "LOGIN_FAILED", "username": "victim", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-17T15:53:55.916252", "event": "LOGIN_FAILED", "username": "victim", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-17T15:53:56.567871", "event": "LOGIN_FAILED", "username": "victim", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-17T15:53:57.264788", "event": "LOGIN_FAILED", "username": "victim", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-17T15:53:58.014094", "event": "LOGIN_FAILED", "username": "victim", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-17T15:53:58.728000", "event": "LOGIN_FAILED", "username": "victim", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-17T15:53:59.528483", "event": "LOGIN_FAILED", "username": "victim", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-17T15:54:00.360077", "event": "LOGIN_FAILED", "username": "victim", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-17T15:54:01.371780", "event": "LOGIN_FAILED", "username": "victim", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-17T15:54:02.603254", "event": "LOGIN_FAILED", "username": "victim", "ip": "218.236.61.177"}
+{"timestamp": "2026-05-17T16:08:18.884731", "event": "SECURITY: GRANULAR_ACL_REJECTION", "username": "attacker", "file_id": 30, "ip": "218.236.61.177"}
+{"timestamp": "2026-05-17T16:15:04.314469", "event": "FILE_DOWNLOADED", "username": "attacker", "file_name": "비번들 (1).txt"}
+{"timestamp": "2026-05-17T16:22:57.754239", "event": "SESSION_HIJACK_DETECTED", "username": "victim"}
+{"timestamp": "2026-05-17T16:25:45.719179", "event": "SESSION_HIJACK_DETECTED", "username": "victim"}
+{"timestamp": "2026-05-17T16:25:56.091264", "event": "SESSION_HIJACK_DETECTED", "username": "victim"}
+{"timestamp": "2026-05-17T16:25:59.057221", "event": "SESSION_HIJACK_DETECTED", "username": "victim"}
+{"timestamp": "2026-05-17T16:27:39.681272", "event": "ABNORMAL_LOCATION_LOGIN", "username": "victim", "ip": "8.8.8.8", "country": "US"}
+{"timestamp": "2026-05-17T16:28:12.483089", "event": "ABNORMAL_LOCATION_LOGIN", "username": "victim", "ip": "8.8.8.8", "country": "US"}
+{"timestamp": "2026-05-18T11:11:23.739824", "event": "LOGIN_FAILED", "username": "admin", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T11:11:25.126882", "event": "LOGIN_FAILED", "username": "admin", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T11:11:26.511848", "event": "LOGIN_FAILED", "username": "admin", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T11:11:27.892937", "event": "LOGIN_FAILED", "username": "admin", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T11:11:29.272827", "event": "LOGIN_FAILED", "username": "admin", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T11:11:30.651890", "event": "LOGIN_FAILED", "username": "admin", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T11:11:32.029526", "event": "LOGIN_FAILED", "username": "admin", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T11:11:33.407993", "event": "LOGIN_FAILED", "username": "admin", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T11:11:34.784856", "event": "LOGIN_FAILED", "username": "admin", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T11:11:36.170430", "event": "LOGIN_FAILED", "username": "admin", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T11:46:06.633098", "event": "LOGIN_FAILED", "username": "victim", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T11:46:07.019522", "event": "LOGIN_FAILED", "username": "victim", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T11:46:07.402928", "event": "LOGIN_FAILED", "username": "victim", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T11:46:07.787383", "event": "LOGIN_FAILED", "username": "victim", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T11:46:08.171277", "event": "LOGIN_FAILED", "username": "victim", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T11:46:08.561615", "event": "LOGIN_FAILED", "username": "victim", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T11:46:08.946568", "event": "LOGIN_FAILED", "username": "victim", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T11:46:09.331791", "event": "LOGIN_FAILED", "username": "victim", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T11:46:09.721280", "event": "LOGIN_FAILED", "username": "victim", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T11:46:10.103295", "event": "LOGIN_FAILED", "username": "victim", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T11:46:14.219785", "event": "ABNORMAL_LOCATION_LOGIN", "username": "victim", "ip": "8.8.8.8", "country": "US"}
+{"timestamp": "2026-05-18T22:32:57.082964", "event": "LOGIN_FAILED", "username": "victim", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T22:32:57.470212", "event": "LOGIN_FAILED", "username": "victim", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T22:32:57.860403", "event": "LOGIN_FAILED", "username": "victim", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T22:32:58.245021", "event": "LOGIN_FAILED", "username": "victim", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T22:32:58.630989", "event": "LOGIN_FAILED", "username": "victim", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T22:32:59.017223", "event": "LOGIN_FAILED", "username": "victim", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T22:32:59.400800", "event": "LOGIN_FAILED", "username": "victim", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T22:32:59.783881", "event": "LOGIN_FAILED", "username": "victim", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T22:33:00.274270", "event": "LOGIN_FAILED", "username": "victim", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T22:33:00.837555", "event": "LOGIN_FAILED", "username": "victim", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-18T22:34:50.237215", "event": "LOGIN_FAILED", "username": "victim", "ip": "127.0.0.1"}
+{"timestamp": "2026-05-18T22:34:50.754651", "event": "LOGIN_FAILED", "username": "victim", "ip": "127.0.0.1"}
+{"timestamp": "2026-05-18T22:34:51.279526", "event": "LOGIN_FAILED", "username": "victim", "ip": "127.0.0.1"}
+{"timestamp": "2026-05-18T22:34:51.797169", "event": "LOGIN_FAILED", "username": "victim", "ip": "127.0.0.1"}
+{"timestamp": "2026-05-18T22:34:52.318694", "event": "LOGIN_FAILED", "username": "victim", "ip": "127.0.0.1"}
+{"timestamp": "2026-05-18T22:34:52.844977", "event": "LOGIN_FAILED", "username": "victim", "ip": "127.0.0.1"}
+{"timestamp": "2026-05-18T22:34:53.369025", "event": "LOGIN_FAILED", "username": "victim", "ip": "127.0.0.1"}
+{"timestamp": "2026-05-18T22:34:53.889178", "event": "LOGIN_FAILED", "username": "victim", "ip": "127.0.0.1"}
+{"timestamp": "2026-05-18T22:34:54.411335", "event": "LOGIN_FAILED", "username": "victim", "ip": "127.0.0.1"}
+{"timestamp": "2026-05-18T22:34:54.931457", "event": "LOGIN_FAILED", "username": "victim", "ip": "127.0.0.1"}
+{"timestamp": "2026-05-18T22:35:56.426443", "event": "LOGIN_FAILED", "username": "victim", "ip": "127.0.0.1"}
+{"timestamp": "2026-05-18T22:35:56.946167", "event": "LOGIN_FAILED", "username": "victim", "ip": "127.0.0.1"}
+{"timestamp": "2026-05-18T22:35:57.469704", "event": "LOGIN_FAILED", "username": "victim", "ip": "127.0.0.1"}
+{"timestamp": "2026-05-18T22:35:57.989288", "event": "LOGIN_FAILED", "username": "victim", "ip": "127.0.0.1"}
+{"timestamp": "2026-05-18T22:35:58.508214", "event": "LOGIN_FAILED", "username": "victim", "ip": "127.0.0.1"}
+{"timestamp": "2026-05-18T22:35:59.029057", "event": "LOGIN_FAILED", "username": "victim", "ip": "127.0.0.1"}
+{"timestamp": "2026-05-18T22:35:59.554147", "event": "LOGIN_FAILED", "username": "victim", "ip": "127.0.0.1"}
+{"timestamp": "2026-05-18T22:36:00.078443", "event": "LOGIN_FAILED", "username": "victim", "ip": "127.0.0.1"}
+{"timestamp": "2026-05-18T22:36:00.976581", "event": "LOGIN_FAILED", "username": "victim", "ip": "127.0.0.1"}
+{"timestamp": "2026-05-18T22:36:01.981702", "event": "LOGIN_FAILED", "username": "victim", "ip": "127.0.0.1"}
+{"timestamp": "2026-05-18T22:36:52.786018", "event": "SECURITY: GRANULAR_ACL_REJECTION", "username": "attacker", "file_id": 30, "ip": "127.0.0.1"}
+{"timestamp": "2026-05-18T22:36:52.989399", "event": "SECURITY: GRANULAR_ACL_REJECTION", "username": "attacker", "file_id": 30, "ip": "127.0.0.1"}
+{"timestamp": "2026-05-18T22:36:53.159332", "event": "SECURITY: GRANULAR_ACL_REJECTION", "username": "attacker", "file_id": 30, "ip": "127.0.0.1"}
+{"timestamp": "2026-05-18T22:36:53.319628", "event": "SECURITY: GRANULAR_ACL_REJECTION", "username": "attacker", "file_id": 30, "ip": "127.0.0.1"}
+{"timestamp": "2026-05-18T22:36:53.480860", "event": "SECURITY: GRANULAR_ACL_REJECTION", "username": "attacker", "file_id": 30, "ip": "127.0.0.1"}
+{"timestamp": "2026-05-18T22:37:13.031834", "event": "ABNORMAL_LOCATION_LOGIN", "username": "victim", "ip": "8.8.8.8", "country": "US"}
+{"timestamp": "2026-05-18T22:37:32.959891", "event": "SESSION_HIJACK_DETECTED", "username": "victim", "original_ip": "127.0.0.1", "current_ip": "5.6.7.8"}
+{"timestamp": "2026-05-18T23:50:55.491926", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-18T23:50:56.038837", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-18T23:50:56.653548", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-18T23:50:57.316874", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-18T23:50:57.969053", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-18T23:50:58.680715", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-18T23:50:59.349007", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-18T23:51:00.120515", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-18T23:51:01.295992", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-18T23:51:02.187209", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:00:12.618974", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:00:13.164608", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:00:13.723953", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:00:14.345681", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:00:15.031908", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:00:15.722144", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:00:16.422777", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:00:17.153904", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:00:17.985495", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:00:18.858244", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:02:53.858717", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:03:03.794219", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:03:04.351197", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:03:04.954289", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:03:05.605506", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:03:06.356691", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:03:07.066701", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:03:07.800469", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:03:08.630320", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:03:09.478948", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:14:32.870921", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:14:33.435932", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:14:34.177895", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:14:34.821740", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:14:35.652209", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:14:36.335482", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:14:37.215351", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:14:38.107691", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:14:39.305308", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:14:40.279068", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:18:59.876964", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:19:00.712349", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:19:01.333737", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:19:02.093922", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:19:02.747018", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:19:03.511672", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:19:04.229905", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:19:05.044112", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:19:05.897866", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:19:06.710428", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:26:50.407189", "event": "LOGIN_FAILED", "username": "admin", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T00:27:09.413505", "event": "ADMIN: ACCOUNT_UNLOCKED", "admin": "admin", "target": "user1"}
+{"timestamp": "2026-05-19T00:28:13.513153", "event": "SECURITY: GRANULAR_ACL_REJECTION", "username": "attacker", "file_id": 30, "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T00:28:13.635603", "event": "SECURITY: GRANULAR_ACL_REJECTION", "username": "attacker", "file_id": 30, "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T00:28:13.739089", "event": "SECURITY: GRANULAR_ACL_REJECTION", "username": "attacker", "file_id": 30, "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T00:28:13.845011", "event": "SECURITY: GRANULAR_ACL_REJECTION", "username": "attacker", "file_id": 30, "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T00:28:13.948079", "event": "SECURITY: GRANULAR_ACL_REJECTION", "username": "attacker", "file_id": 30, "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T00:30:36.013889", "event": "SESSION_HIJACK_DETECTED", "username": "victim", "original_ip": "172.18.0.1", "current_ip": "5.6.7.8"}
+{"timestamp": "2026-05-19T00:46:45.097242", "event": "ABNORMAL_LOCATION_LOGIN", "username": "victim", "ip": "144.48.38.146", "country": "AU"}
+{"timestamp": "2026-05-19T00:49:43.206378", "event": "ABNORMAL_LOCATION_LOGIN", "username": "victim", "ip": "144.48.38.146", "country": "AU"}
+{"timestamp": "2026-05-19T00:49:56.578476", "event": "ABNORMAL_LOCATION_LOGIN", "username": "victim", "ip": "144.48.37.111", "country": "AU"}
+{"timestamp": "2026-05-19T00:50:06.467650", "event": "ABNORMAL_LOCATION_LOGIN", "username": "victim", "ip": "144.48.37.111", "country": "AU"}
+{"timestamp": "2026-05-19T00:53:43.393160", "event": "ABNORMAL_LOCATION_LOGIN", "username": "victim", "ip": "144.48.38.138", "country": "AU"}
+{"timestamp": "2026-05-19T00:57:16.843549", "event": "ABNORMAL_LOCATION_LOGIN", "username": "victim", "ip": "144.48.38.138", "country": "AU"}
+{"timestamp": "2026-05-19T01:28:15.479586", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T01:28:20.442794", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T01:28:52.587792", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T01:31:18.026436", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T01:31:26.962959", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T01:31:44.876899", "event": "LOGIN_FAILED", "username": "victim", "ip": "182.208.176.30"}
+{"timestamp": "2026-05-19T01:32:59.579513", "event": "LOGIN_FAILED", "username": "user1", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:32:59.975302", "event": "LOGIN_FAILED", "username": "user2", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:00.728386", "event": "LOGIN_FAILED", "username": "user3", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:00.797877", "event": "LOGIN_FAILED", "username": "user4", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:00.867719", "event": "LOGIN_FAILED", "username": "user5", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:00.936173", "event": "LOGIN_FAILED", "username": "user6", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:01.010821", "event": "LOGIN_FAILED", "username": "user7", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:01.080058", "event": "LOGIN_FAILED", "username": "user8", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:01.157542", "event": "LOGIN_FAILED", "username": "user9", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:01.239564", "event": "LOGIN_FAILED", "username": "user0", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:01.330380", "event": "LOGIN_FAILED", "username": "user1", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:01.882547", "event": "LOGIN_FAILED", "username": "user2", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:02.375374", "event": "LOGIN_FAILED", "username": "user3", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:02.444795", "event": "LOGIN_FAILED", "username": "user4", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:02.514761", "event": "LOGIN_FAILED", "username": "user5", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:02.586561", "event": "LOGIN_FAILED", "username": "user6", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:02.657826", "event": "LOGIN_FAILED", "username": "user7", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:02.729253", "event": "LOGIN_FAILED", "username": "user8", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:02.797406", "event": "LOGIN_FAILED", "username": "user9", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:02.864473", "event": "LOGIN_FAILED", "username": "user0", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:02.933248", "event": "LOGIN_FAILED", "username": "user1", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:03.328041", "event": "LOGIN_FAILED", "username": "user2", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:03.728761", "event": "LOGIN_FAILED", "username": "user3", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:03.806220", "event": "LOGIN_FAILED", "username": "user4", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:03.874921", "event": "LOGIN_FAILED", "username": "user5", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:03.946878", "event": "LOGIN_FAILED", "username": "user6", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:04.019833", "event": "LOGIN_FAILED", "username": "user7", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:04.089370", "event": "LOGIN_FAILED", "username": "user8", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:04.158672", "event": "LOGIN_FAILED", "username": "user9", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:04.226422", "event": "LOGIN_FAILED", "username": "user0", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:04.298037", "event": "LOGIN_FAILED", "username": "user1", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:04.689577", "event": "LOGIN_FAILED", "username": "user2", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:05.084836", "event": "LOGIN_FAILED", "username": "user3", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:05.156157", "event": "LOGIN_FAILED", "username": "user4", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:05.224372", "event": "LOGIN_FAILED", "username": "user5", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:05.293927", "event": "LOGIN_FAILED", "username": "user6", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:05.363669", "event": "LOGIN_FAILED", "username": "user7", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:05.432461", "event": "LOGIN_FAILED", "username": "user8", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:05.500224", "event": "LOGIN_FAILED", "username": "user9", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:05.567620", "event": "LOGIN_FAILED", "username": "user0", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:05.640254", "event": "LOGIN_FAILED", "username": "user1", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:06.034599", "event": "LOGIN_FAILED", "username": "user2", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:06.458123", "event": "LOGIN_FAILED", "username": "user3", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:06.535794", "event": "LOGIN_FAILED", "username": "user4", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:06.602103", "event": "LOGIN_FAILED", "username": "user5", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:06.671406", "event": "LOGIN_FAILED", "username": "user6", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:06.743293", "event": "LOGIN_FAILED", "username": "user7", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:06.813420", "event": "LOGIN_FAILED", "username": "user8", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:06.883114", "event": "LOGIN_FAILED", "username": "user9", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:06.954076", "event": "LOGIN_FAILED", "username": "user0", "ip": "172.18.0.1"}
+{"timestamp": "2026-05-19T01:33:06.984201", "event": "IP_BRUTE_FORCE_BLOCKED", "username": "user0", "ip": "172.18.0.1", "fail_count": 50}
+{"timestamp": "2026-05-19T01:33:07.033650", "event": "IP_BLOCKED", "username": "victim", "ip": "172.18.0.1"}

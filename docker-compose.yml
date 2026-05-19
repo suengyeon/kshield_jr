@@ -1,5 +1,4 @@
 version: "3.9"
-
 services:
   cloudsec-app:
     build: .
@@ -7,24 +6,12 @@ services:
     ports:
       - "5000:5000"
     env_file:
-      - .env  # ← .env 파일 자동 로드
+      - .env
     volumes:
-      - type: bind
-        source: ${USERPROFILE}/.aws
-        target: /home/appuser/.aws
-        read_only: true
       - ./.env:/app/.env:ro
-      - ./data:/app/instance  # 로컬의 data 폴더와 컨테이너 내부 DB 폴더 연결
-      - ./logs:/app/logs         # 로컬 로그 폴더를 컨테이너에 마운트하여 로그 영속화
+      - ./data:/app/data:ro
+      - ./logs:/app/logs
     environment:
       - FLASK_APP=app.py
       - FLASK_ENV=development
-      # .env 파일에서 로드되는 환경 변수 (오버라이드 방지)
-      # - FLASK_SECRET_KEY=${FLASK_SECRET_KEY}
-      # - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}
-      # - S3_BUCKET_NAME=${S3_BUCKET_NAME}
-      # - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
-      # - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
-      # - APP_DEFAULT_USERNAME=${APP_DEFAULT_USERNAME}
-      # - APP_DEFAULT_PASSWORD=${APP_DEFAULT_PASSWORD}
     restart: unless-stopped

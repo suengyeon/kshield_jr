@@ -16,6 +16,16 @@
                         <label for="password" class="form-label">비밀번호</label>
                         <input id="password" name="password" type="password" class="form-control" required>
                     </div>
+                    {% if captcha %}
+                    <div class="mb-3 p-3 border rounded bg-light">
+                        <label class="form-label fw-bold text-danger">
+                            🤖 자동화 공격 탐지 — CAPTCHA 인증 필요
+                        </label>
+                        <p class="mb-2 fs-5 text-center fw-bold">{{ captcha }}</p>
+                        <input type="text" name="captcha_answer" class="form-control text-center"
+                               placeholder="답을 입력하세요" required autocomplete="off">
+                    </div>
+                    {% endif %}
                     <button type="submit" class="btn btn-primary w-100">Login</button>
                 </form>
                 <div class="mt-3">

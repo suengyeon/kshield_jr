@@ -1,76 +1,119 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="row g-4">
-    <div class="col-lg-5">
-        <div class="card shadow-sm">
-            <div class="card-header bg-white">
-                <h5 class="mb-0">파일 업로드</h5>
+    <div class="col-lg-4">
+        <div class="card shadow-sm border-0">
+            <div class="card-header bg-white py-3">
+                <h5 class="mb-0 fw-bold text-primary"><i class="fas fa-upload me-2"></i>파일 업로드</h5>
             </div>
             <div class="card-body">
                 <form method="post" action="{{ url_for('upload') }}" enctype="multipart/form-data">
                     <div class="mb-3">
+                        <label class="form-label small fw-bold">파일 선택</label>
                         <input class="form-control" type="file" name="file" required>
                     </div>
-                    <div class="mb-3">
-                        <label class="form-label">공개 레벨</label>
-                        <div>
+                    <div class="mb-4">
+                        <label class="form-label small fw-bold">공개 범위 설정</label>
+                        <div class="p-3 bg-light rounded border">
                             {% for level in range(1, session.get('level', 1) + 1) %}
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="level_{{ level }}" name="level_{{ level }}">
+                            <div class="form-check {% if not loop.last %}mb-2{% endif %}">
+                                <input type="checkbox" class="form-check-input" id="level_{{ level }}" name="level_{{ level }}" {% if level == session.get('level') %}checked{% endif %}>
                                 <label class="form-check-label" for="level_{{ level }}">
-                                    레벨 {{ level }}
+                                    보안 레벨 {{ level }} 허용
                                 </label>
                             </div>
                             {% endfor %}
                         </div>
+                        <small class="text-muted mt-2 d-block">※ 본인의 권한 레벨까지만 설정 가능합니다.</small>
                     </div>
-                    <button class="btn btn-primary" type="submit">Upload</button>
+                    <button class="btn btn-primary w-100 fw-bold" type="submit">업로드 시작</button>
                 </form>
             </div>
         </div>
     </div>
 
-    <div class="col-lg-7">
-        <div class="card shadow-sm">
-            <div class="card-header bg-white">
-                <h5 class="mb-0">파일 목록</h5>
+    <div class="col-lg-8">
+        <div class="card shadow-sm border-0 mb-4">
+            <div class="card-header bg-white py-3 d-flex justify-content-between align-items-center">
+                <h5 class="mb-0 fw-bold text-dark"><i class="fas fa-folder-open me-2 text-warning"></i>내 업로드 파일</h5>
+                <span class="badge bg-secondary">Total {% set my_count = files | selectattr('owner_id', 'equalto', session.get('user_id')) | list | length %}{{ my_count }}</span>
             </div>
             <div class="card-body p-0">
                 <div class="table-responsive">
-                    <table class="table table-striped mb-0">
-                        <thead>
-                        <tr>
-                            <th>파일명</th>
-                            <th>업로드한 사용자</th>
-                            <th>공개 레벨</th>
-                            <th class="text-end">크기 (B)</th>
-                            <th>업로드 날짜 (UTC)</th>
-                            <th>동작</th>
-                        </tr>
+                    <table class="table table-hover mb-0 align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th>파일명</th>
+                                <th>레벨</th>
+                                <th class="text-end">크기</th>
+                                <th>동작</th>
+                            </tr>
                         </thead>
                         <tbody>
-                        {% for f in files %}
-                        <tr>
-                            <td>{{ f["original_name"] }}</td>
-                            <td>{{ f["uploaded_by_username"] or '알 수 없음' }}</td>
-                            <td>{{ f["target_levels"] }}</td>
-                            <td class="text-end">{{ f["size_bytes"] }}</td>
-                            <td>{{ f["uploaded_at"] }}</td>
-                            <td>
-                                <a class="btn btn-sm btn-outline-primary" href="{{ url_for('download', id=f['id']) }}">Download</a>
-                                {% if f["owner_id"] == session.get("user_id") or session.get("role") == "admin" %}
-                                <form method="post" action="{{ url_for('delete') }}" class="d-inline">
-                                    <input type="hidden" name="id" value="{{ f['id'] }}">
-                                    <button class="btn btn-sm btn-outline-danger" type="submit">Delete</button>
-                                </form>
-                                {% endif %}
-                            </td>
-                        </tr>
-                        {% else %}
-                        <tr>
-                            <td colspan="6" class="text-center py-4 text-muted">업로드된 파일이 없습니다.</td>
-                        </tr>
-                        {% endfor %}
+                            {% for f in files if f["owner_id"] == session.get("user_id") %}
+                            <tr>
+                                <td class="fw-bold">{{ f["original_name"] }}</td>
+                                <td><span class="badge bg-primary">LV {{ f["target_levels"] }}</span></td>
+                                <td class="text-end small">{{ (f["size_bytes"] / 1024) | round(1) }} KB</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a class="btn btn-sm btn-outline-primary" href="{{ url_for('download', id=f['id']) }}">다운로드</a>
+                                        <form method="post" action="{{ url_for('delete') }}" class="d-inline" onsubmit="return confirm('정말 삭제할까요?');">
+                                            <input type="hidden" name="id" value="{{ f['id'] }}">
+                                            <button class="btn btn-sm btn-outline-danger" type="submit">삭제</button>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                            {% else %}
+                            <tr>
+                                <td colspan="4" class="text-center py-4 text-muted small">업로드한 파일이 없습니다.</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-sm border-0">
+            <div class="card-header bg-white py-3">
+                <h5 class="mb-0 fw-bold text-dark"><i class="fas fa-share-alt me-2 text-success"></i>나에게 공유된 리소스</h5>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0 align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th>파일명</th>
+                                <th>공유자</th>
+                                <th>레벨</th>
+                                <th>날짜</th>
+                                <th>동작</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for f in files if f["owner_id"] != session.get("user_id") %}
+                            <tr>
+                                <td>{{ f["original_name"] }}</td>
+                                <td class="small">{{ f["uploaded_by_username"] or 'System' }}</td>
+                                <td><span class="badge bg-success">LV {{ f["target_levels"] }}</span></td>
+                                <td class="small text-muted">{{ f["uploaded_at"][:10] }}</td>
+                                <td>
+                                    <a class="btn btn-sm btn-success" href="{{ url_for('download', id=f['id']) }}">다운로드</a>
+                                    {% if session.get("role") == "admin" %}
+                                    <form method="post" action="{{ url_for('delete') }}" class="d-inline" onsubmit="return confirm('정말 삭제할까요?')">
+                                        <input type="hidden" name="id" value="{{ f['id'] }}">
+                                        <button class="btn btn-sm btn-outline-danger" type="submit">삭제</button>
+                                    </form>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% else %}
+                            <tr>
+                                <td colspan="5" class="text-center py-4 text-muted small">공유된 리소스가 없습니다.</td>
+                            </tr>
+                            {% endfor %}
                         </tbody>
                     </table>
                 </div>

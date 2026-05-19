@@ -4,3 +4,5 @@ python-dotenv==1.0.0
 Werkzeug==2.3.7
 mysql-connector-python==8.0.33
 flask-cors==4.0.0
+geoip2
+maxminddb

@@ -1,37 +1,27 @@
 {% extends "base.html" %}
-
 {% block content %}
-
 <div class="card shadow-sm">
-
     <div class="card-header bg-white">
         <h5 class="mb-0">Security Audit Log</h5>
     </div>
-
     <div class="card-body">
-
-        <!-- 필터 버튼 + IP 검색 -->
         <div class="mb-3 d-flex align-items-center flex-wrap gap-2">
-            <button class="btn btn-sm btn-dark filter-btn active" data-filter="ALL">ALL</button>
-            <button class="btn btn-sm filter-btn" data-filter="FILE_DOWNLOADED" style="background-color:#198754;color:white;opacity:0.4">DOWNLOADED</button>
-            <button class="btn btn-sm filter-btn" data-filter="FILE_UPLOAD" style="background-color:#0d6efd;color:white;opacity:0.4">UPLOAD</button>
-            <button class="btn btn-sm filter-btn" data-filter="DELETED" style="background-color:#6c757d;color:white;opacity:0.4">DELETED</button>
-            <button class="btn btn-sm filter-btn" data-filter="SECURITY" style="background-color:#dc3545;color:white;opacity:0.4">SECURITY</button>
-            <button class="btn btn-sm filter-btn" data-filter="ADMIN" style="background-color:#ffc107;color:black;opacity:0.4">ADMIN</button>
-            <button class="btn btn-sm filter-btn" data-filter="LOGIN" style="background-color:#212529;color:white;opacity:0.4">LOGIN</button>
-            <button class="btn btn-sm filter-btn" data-filter="SESSION_HIJACK" style="background-color:#dc3545;color:white;opacity:0.4">SESSION HIJACK</button>
-
+            <button class="btn btn-sm btn-dark filter-btn" data-filter="ALL">ALL</button>
+            <button class="btn btn-sm filter-btn" data-filter="FILE_DOWNLOADED" style="background-color:#198754;color:white;">DOWNLOADED</button>
+            <button class="btn btn-sm filter-btn" data-filter="FILE_UPLOAD" style="background-color:#0d6efd;color:white;">UPLOAD</button>
+            <button class="btn btn-sm filter-btn" data-filter="DELETED" style="background-color:#6c757d;color:white;">DELETED</button>
+            <button class="btn btn-sm filter-btn" data-filter="SECURITY" style="background-color:#dc3545;color:white;">SECURITY</button>
+            <button class="btn btn-sm filter-btn" data-filter="ADMIN" style="background-color:#ffc107;color:black;">ADMIN</button>
+            <button class="btn btn-sm filter-btn" data-filter="LOGIN" style="background-color:#212529;color:white;">LOGIN</button>
+            <button class="btn btn-sm filter-btn" data-filter="SESSION_HIJACK" style="background-color:#dc3545;color:white;">SESSION HIJACK</button>
             <div class="input-group ms-auto" style="max-width:250px;">
-                <span class="input-group-text"><i class="bi bi-search"></i>🔍</span>
+                <span class="input-group-text">🔍</span>
                 <input type="text" id="ip-search" class="form-control form-control-sm" placeholder="Search IP...">
                 <button class="btn btn-sm btn-outline-secondary" id="ip-clear">✕</button>
             </div>
         </div>
-
         <div class="table-responsive">
-
             <table class="table table-striped align-middle">
-
                 <thead>
                     <tr>
                         <th>시간</th>
@@ -40,17 +30,12 @@
                         <th>상세정보</th>
                     </tr>
                 </thead>
-
                 <tbody id="log-table-body">
-
                 {% for log in logs %}
-
                     <tr class="log-row" data-event="{{ log.event }}" data-ip="{{ log.ip or log.current_ip or '' }}">
-
                         <td>{{ log.timestamp }}</td>
-
                         <td>
-                            <span class="badge
+                            <span class="badge 
                             {% if 'SECURITY' in log.event %}bg-danger
                             {% elif 'DELETED' in log.event %}bg-secondary
                             {% elif 'DOWNLOADED' in log.event %}bg-success
@@ -62,122 +47,69 @@
                                 {{ log.event }}
                             </span>
                         </td>
-
                         <td>{{ log.actor or log.username or log.admin or '-' }}</td>
-
                         <td>
                             <div class="small">
-
-                                {% if log.owner %}
-                                <div><strong>File Owner:</strong> {{ log.owner }}</div>
-                                {% endif %}
-
-                                {% if log.file_name %}
-                                <div><strong>File Name:</strong> {{ log.file_name }}</div>
-                                {% endif %}
-
-                                {% if log.file_id %}
-                                <div><strong>File ID:</strong> {{ log.file_id }}</div>
-                                {% endif %}
-
-                                {% if log.target_levels %}
-                                <div><strong>Permission Level:</strong> {{ log.target_levels }}</div>
-                                {% endif %}
-
-                                {% if log.size_bytes %}
-                                <div><strong>File Size:</strong> {{ log.size_bytes }} bytes</div>
-                                {% endif %}
-
-                                {% if log.user_level %}
-                                <div><strong>User Level:</strong> {{ log.user_level }}</div>
-                                {% endif %}
-
-                                {% if log.allowed_levels %}
-                                <div><strong>Allowed Levels:</strong> {{ log.allowed_levels }}</div>
-                                {% endif %}
-
-                                {% if log.ip %}
-                                <div><strong>IP:</strong> {{ log.ip }}</div>
-                                {% endif %}
-
-                                {% if log.original_ip %}
-                                <div><strong>Original IP:</strong> {{ log.original_ip }}</div>
-                                {% endif %}
-
-                                {% if log.current_ip %}
-                                <div><strong>Attacker IP:</strong> {{ log.current_ip }}</div>
-                                {% endif %}
-
+                                {% if log.file_name %}<div><strong>File:</strong> {{ log.file_name }}</div>{% endif %}
+                                {% if log.ip %}<div><strong>IP:</strong> {{ log.ip }}</div>{% endif %}
+                                {% if log.current_ip %}<div><strong>Attacker IP:</strong> {{ log.current_ip }}</div>{% endif %}
+                                {% if log.target_levels %}<div><strong>Levels:</strong> {{ log.target_levels }}</div>{% endif %}
+                                {% if log.country %}<div><strong>Country:</strong> {{ log.country }}</div>{% endif %}
                             </div>
                         </td>
-
                     </tr>
-
                 {% endfor %}
-
                 </tbody>
-
             </table>
-
         </div>
-
     </div>
-
 </div>
-
-<!-- 페이지네이션 -->
-<div style="display:flex; justify-content:center; align-items:center; gap:8px; margin:20px 0; flex-wrap:wrap;">
-  {% if page > 1 %}
-    <a href="?page=1" style="padding:6px 12px; border:1px solid #ccc; border-radius:4px; text-decoration:none; color:#333;">«</a>
-    <a href="?page={{ page - 1 }}" style="padding:6px 12px; border:1px solid #ccc; border-radius:4px; text-decoration:none; color:#333;">‹</a>
+<div style="display:flex; justify-content:center; align-items:center; gap:8px; margin:20px 0;">
+  {% if page is defined and page > 1 %}
+    <a href="?page=1&filter={{ filter_type }}" style="padding:6px 12px; border:1px solid #ccc; text-decoration:none;">«</a>
   {% endif %}
-  {% for p in range([1, page-2]|max, [total_pages+1, page+3]|min) %}
-    {% if p == page %}
-      <span style="padding:6px 12px; border:1px solid #2E75B6; border-radius:4px; background:#2E75B6; color:white; font-weight:bold;">{{ p }}</span>
-    {% else %}
-      <a href="?page={{ p }}" style="padding:6px 12px; border:1px solid #ccc; border-radius:4px; text-decoration:none; color:#333;">{{ p }}</a>
-    {% endif %}
-  {% endfor %}
-  {% if page < total_pages %}
-    <a href="?page={{ page + 1 }}" style="padding:6px 12px; border:1px solid #ccc; border-radius:4px; text-decoration:none; color:#333;">›</a>
-    <a href="?page={{ total_pages }}" style="padding:6px 12px; border:1px solid #ccc; border-radius:4px; text-decoration:none; color:#333;">»</a>
+  <span style="font-weight:bold;">Page {{ page }} / {{ total_pages }} (Total {{ total }})</span>
+  {% if page is defined and page < total_pages %}
+    <a href="?page={{ page + 1 }}&filter={{ filter_type }}" style="padding:6px 12px; border:1px solid #ccc; text-decoration:none;">»</a>
   {% endif %}
-  <span style="color:#888; font-size:13px; margin-left:8px;">총 {{ total }}개 / {{ total_pages }}페이지</span>
 </div>
-
 <script>
     const filterBtns = document.querySelectorAll('.filter-btn');
-    const currentFilter = "{{ filter_type }}";
-
+    const currentFilterParam = "{{ filter_type }}";
+    let activeFilters = currentFilterParam.split(',').filter(f => f !== "");
     filterBtns.forEach(btn => {
-        if (btn.dataset.filter === currentFilter) {
+        const val = btn.dataset.filter;
+        if (activeFilters.includes(val) || (val === 'ALL' && (activeFilters.length === 0 || activeFilters.includes('ALL')))) {
             btn.style.opacity = '1';
+            btn.classList.add('active-filter');
+        } else {
+            btn.style.opacity = '0.4';
         }
         btn.addEventListener('click', () => {
-            const filter = btn.dataset.filter;
-            window.location.href = '/admin/logs?page=1&filter=' + filter;
+            let next;
+            if (val === 'ALL') {
+                next = ['ALL'];
+            } else {
+                next = activeFilters.filter(f => f !== 'ALL');
+                if (next.includes(val)) {
+                    next = next.filter(f => f !== val);
+                } else {
+                    next.push(val);
+                }
+            }
+            if (next.length === 0) next = ['ALL'];
+            window.location.href = `/admin/logs?page=1&filter=${next.join(',')}`;
         });
     });
-
-    let ipFilter = '';
     document.getElementById('ip-search').addEventListener('input', function() {
-        ipFilter = this.value.trim().toLowerCase();
-        applyIpFilter();
-    });
-    document.getElementById('ip-clear').addEventListener('click', function() {
-        document.getElementById('ip-search').value = '';
-        ipFilter = '';
-        applyIpFilter();
-    });
-    function applyIpFilter() {
-        const rows = document.querySelectorAll('.log-row');
-        rows.forEach(row => {
-            const ip = row.dataset.ip.toLowerCase();
-            row.style.display = (ipFilter === '' || ip.includes(ipFilter)) ? '' : 'none';
+        const search = this.value.toLowerCase();
+        document.querySelectorAll('.log-row').forEach(row => {
+            row.style.display = row.dataset.ip.toLowerCase().includes(search) ? '' : 'none';
         });
-    }
+    });
+    document.getElementById('ip-clear').addEventListener('click', () => {
+        document.getElementById('ip-search').value = '';
+        document.querySelectorAll('.log-row').forEach(row => row.style.display = '');
+    });
 </script>
-
-
-
 {% endblock %}
